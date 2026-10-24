@@ -1,24 +1,168 @@
----
-layout: home
-title: SOMA
-subtitle: 
----
-<html lang="en">
+<!doctype html>
+<html lang="ko">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5E8BXRBCW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z5E8BXRBCW');
-</script>
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="직접 필요한 앱을 만들며 배운 것과 일상의 기록을 남기는 Lumloom 블로그입니다."
+    />
+    <meta name="theme-color" content="#f5f2ea" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Lumloom Journal</title>
   </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
 
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="./index.html" aria-label="Lumloom Journal 홈">
+          <span class="brand-mark" aria-hidden="true">L</span>
+          <span>Lumloom Journal</span>
+        </a>
+        <nav class="site-nav" aria-label="주요 메뉴">
+          <a href="#notes">글</a>
+          <a href="#projects">프로젝트</a>
+          <a href="https://lumloom.github.io/">Lumloom</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero shell">
+        <p class="eyebrow">Lumloom Journal</p>
+        <h1>만들고, 써보고,<br />남기는 기록.</h1>
+        <p class="hero-copy">
+          직접 필요한 앱을 만들며 배운 것과 시행착오를 기록합니다.<br />
+          가끔은 일상에서 오래 남은 생각도 함께 적습니다.
+        </p>
+        <p class="hero-date">다시 시작한 날 · 2026. 10. 25.</p>
+      </section>
+
+      <section class="shell featured-section" aria-labelledby="featured-title">
+        <a class="featured-card" href="./posts/lumloom.html">
+          <div class="featured-copy">
+            <p class="post-meta">첫 번째 기록 · 6분</p>
+            <h2 id="featured-title">룸룸을 다시 소개합니다</h2>
+            <p>
+              직접 쓰고 싶은 앱을 하나씩 만들다 보니 작은 프로젝트들이 모였습니다.
+              Lumloom이 무엇을 만드는 곳인지 지금의 언어로 다시 정리했습니다.
+            </p>
+            <span class="text-link">글 읽기 <span aria-hidden="true">→</span></span>
+          </div>
+          <div class="cover cover-loom" aria-hidden="true">
+            <span class="cover-label">LUMLOOM</span>
+            <span class="thread thread-one"></span>
+            <span class="thread thread-two"></span>
+            <span class="thread thread-three"></span>
+          </div>
+        </a>
+      </section>
+
+      <section id="notes" class="shell section-block" aria-labelledby="notes-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Notes</p>
+            <h2 id="notes-title">최근 기록</h2>
+          </div>
+          <p>프로젝트를 만들며 정리한 생각들입니다.</p>
+        </div>
+
+        <div class="post-grid">
+          <article class="post-card">
+            <a class="post-cover cover cover-records" href="./posts/recording-apps.html" aria-label="기록 앱을 여러 개 만든 이유 읽기">
+              <span class="cover-index">01</span>
+              <span class="record-line record-line-a"></span>
+              <span class="record-line record-line-b"></span>
+              <span class="record-line record-line-c"></span>
+            </a>
+            <div class="post-card-body">
+              <p class="post-meta">프로젝트 · 7분</p>
+              <h3><a href="./posts/recording-apps.html">기록 앱을 여러 개 만든 이유</a></h3>
+              <p>하루문장, Leaf, 거인의기록, 여운은 무엇을 다르게 기록하는지 정리했습니다.</p>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <a class="post-cover cover cover-adventure" href="./posts/today-adventure.html" aria-label="오늘의 모험을 만들며 생각한 것 읽기">
+              <span class="cover-index">02</span>
+              <span class="adventure-path"></span>
+              <span class="adventure-dot adventure-dot-a"></span>
+              <span class="adventure-dot adventure-dot-b"></span>
+              <span class="adventure-dot adventure-dot-c"></span>
+            </a>
+            <div class="post-card-body">
+              <p class="post-meta">만드는 과정 · 5분</p>
+              <h3><a href="./posts/today-adventure.html">오늘의 모험을 만들며 생각한 것</a></h3>
+              <p>해야 할 일을 작은 퀘스트로 바꾸는 앱을 만들며 기준으로 삼았던 것들.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Projects</p>
+              <h2>지금 공개된 프로젝트</h2>
+            </div>
+            <p>각 프로젝트는 브라우저에서 바로 사용할 수 있습니다.</p>
+          </div>
+
+          <div class="project-list">
+            <a href="https://lumloom.github.io/adventure/" class="project-row">
+              <span class="project-number">01</span>
+              <span class="project-main"><strong>오늘의 모험</strong><small>작은 할 일을 퀘스트로 바꾸는 가족용 앱</small></span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://lumloom.github.io/writing/" class="project-row">
+              <span class="project-number">02</span>
+              <span class="project-main"><strong>하루문장</strong><small>매일 한 문장을 남기는 조용한 기록 공간</small></span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://lumloom.github.io/leaf/" class="project-row">
+              <span class="project-number">03</span>
+              <span class="project-main"><strong>Lumloom Leaf</strong><small>함께 자라는 식물의 변화를 기록하는 앱</small></span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://lumloom.github.io/Journal/" class="project-row">
+              <span class="project-number">04</span>
+              <span class="project-main"><strong>거인의기록 Journal</strong><small>오늘의 핵심과 할 일, 사람과의 대화를 모으는 기록 앱</small></span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://lumloom.github.io/yeoun/" class="project-row">
+              <span class="project-number">05</span>
+              <span class="project-main"><strong>여운 Yeoun</strong><small>책, 영화, 시리즈, 게임 뒤에 남은 생각을 보관하는 아카이브</small></span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="shell blog-note" aria-labelledby="blog-note-title">
+        <p class="eyebrow">About this blog</p>
+        <h2 id="blog-note-title">완성보다 과정을 기록합니다.</h2>
+        <p>
+          거창한 결론보다는 무엇이 필요했고, 어떻게 만들었으며, 다음에는 무엇을
+          바꾸고 싶은지 적으려 합니다. 업데이트는 천천히 이어집니다.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <p class="footer-brand">Lumloom Journal</p>
+          <p>만들고, 써보고, 남기는 기록.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://lumloom.github.io/">홈페이지</a>
+          <a href="https://github.com/lumloom">GitHub</a>
+        </div>
+        <p class="copyright">© 2026 Lumloom</p>
+      </div>
+    </footer>
+  </body>
 </html>
