@@ -247,71 +247,6 @@ a:focus-visible {
 .thread-two { top: 52%; transform: rotate(-21deg); }
 .thread-three { top: 70%; transform: rotate(9deg); }
 
-.daily-intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
-  gap: clamp(42px, 8vw, 104px);
-  align-items: center;
-  padding-bottom: 132px;
-}
-
-.daily-intro-copy h2 {
-  margin: 14px 0 24px;
-  font-family: var(--font-serif);
-  font-size: clamp(38px, 5.5vw, 58px);
-  font-weight: 500;
-  line-height: 1.08;
-}
-
-.daily-intro-copy > p:not(.eyebrow) {
-  max-width: 520px;
-  margin: 0 0 30px;
-  color: var(--muted);
-  font-size: 17px;
-}
-
-.daily-paper {
-  position: relative;
-  min-height: 360px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 4px 26px 26px 4px;
-  background:
-    linear-gradient(90deg, rgba(113, 128, 107, 0.16) 1px, transparent 1px) 52px 0 / 1px 100%,
-    var(--paper);
-  box-shadow: 16px 20px 45px rgba(63, 64, 55, 0.08);
-  transform: rotate(1.4deg);
-}
-
-.daily-paper::before {
-  content: '';
-  position: absolute;
-  inset: 0 auto 0 20px;
-  width: 8px;
-  background: repeating-linear-gradient(to bottom, transparent 0 25px, rgba(113, 128, 107, 0.42) 25px 31px, transparent 31px 43px);
-}
-
-.daily-date {
-  position: absolute;
-  top: 42px;
-  left: 78px;
-  color: var(--accent-dark);
-  font-family: var(--font-serif);
-  font-size: 18px;
-}
-
-.daily-line {
-  position: absolute;
-  left: 78px;
-  height: 1px;
-  background: #cbc8bd;
-}
-
-.daily-line-a { top: 112px; width: 62%; }
-.daily-line-b { top: 156px; width: 70%; }
-.daily-line-c { top: 200px; width: 54%; }
-.daily-line-d { top: 272px; width: 67%; }
-
 .section-block {
   padding-bottom: 132px;
 }
@@ -770,17 +705,6 @@ a:focus-visible {
   .featured-section,
   .section-block {
     padding-bottom: 88px;
-  }
-
-  .daily-intro {
-    grid-template-columns: 1fr;
-    gap: 46px;
-    padding-bottom: 92px;
-  }
-
-  .daily-paper {
-    min-height: 280px;
-    max-width: 440px;
   }
 
   .featured-card {
