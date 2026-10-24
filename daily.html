@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!doctype html>
 <html lang="ko">
   <head>
@@ -57,15 +60,18 @@
         </div>
 
         <div class="article-index">
-          <a class="article-index-row" href="./posts/one-step-back.html">
-            <span class="article-index-number">01</span>
+          {% assign daily_entries = site.daily | sort: "date" | reverse %}
+          {% for entry in daily_entries %}
+          <a class="article-index-row" href="{{ entry.url | relative_url }}">
+            <span class="article-index-number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
             <span class="article-index-main">
-              <small>2026. 10. 24. · 글감</small>
-              <strong>한 발자국 멀리에서 지켜보기</strong>
-              <span>식물을 키우며 알게 된 기다림을 사람을 대하는 마음까지 이어봅니다.</span>
+              <small>{{ entry.date | date: "%Y. %m. %d." }} · {{ entry.category }}{% if entry.prompt %} · {{ entry.prompt }}{% endif %}</small>
+              <strong>{{ entry.title }}</strong>
+              <span>{{ entry.summary }}</span>
             </span>
             <span class="project-arrow" aria-hidden="true">→</span>
           </a>
+          {% endfor %}
         </div>
       </section>
     </main>

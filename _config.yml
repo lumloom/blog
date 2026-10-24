@@ -1,0 +1,17 @@
+title: Lumloom Journal
+url: https://lumloom.github.io
+baseurl: /blog
+lang: ko
+markdown: kramdown
+
+collections:
+  daily:
+    output: true
+    permalink: /posts/:name.html
+
+defaults:
+  - scope:
+      path: ""
+      type: daily
+    values:
+      layout: daily-post

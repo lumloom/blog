@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ page.description | escape }}" />
+    <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml" />
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+    <title>{{ page.title }} — Lumloom Journal</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#article">본문으로 바로가기</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="{{ '/index.html' | relative_url }}"><span class="brand-mark" aria-hidden="true">L</span><span>Lumloom Journal</span></a>
+        <nav class="site-nav" aria-label="주요 메뉴"><a href="{{ '/posts.html' | relative_url }}">글</a><a href="{{ '/daily.html' | relative_url }}" aria-current="page">하루문장</a><a href="{{ '/index.html#projects' | relative_url }}">프로젝트</a><a href="https://lumloom.github.io/">Lumloom</a></nav>
+      </div>
+    </header>
+    <main id="article">
+      <header class="article-header article-shell">
+        <a class="article-back" href="{{ '/daily.html' | relative_url }}"><span aria-hidden="true">←</span> 하루문장</a>
+        <p class="post-meta">{{ page.category }}{% if page.prompt %} · {{ page.prompt }}{% endif %} · {{ page.date | date: "%Y. %m. %d." }} · {{ page.read_time }}</p>
+        <h1>{{ page.title_break | default: page.title }}</h1>
+        <p class="article-deck">{{ page.description }}</p>
+      </header>
+      <article class="article-body article-shell">
+        {{ content }}
+      </article>
+      <nav class="article-nav article-shell" aria-label="글 목록"><a href="{{ '/daily.html' | relative_url }}">← 하루문장 글 목록으로</a></nav>
+    </main>
+    <footer class="site-footer"><div class="shell footer-inner"><div><p class="footer-brand">Lumloom Journal</p><p>만들고, 써보고, 남기는 기록.</p></div><div class="footer-links"><a href="https://lumloom.github.io/">홈페이지</a><a href="https://github.com/lumloom">GitHub</a></div><p class="copyright">© 2026 Lumloom</p></div></footer>
+  </body>
+</html>
